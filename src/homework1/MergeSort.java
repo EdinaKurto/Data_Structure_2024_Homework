@@ -1,3 +1,5 @@
+package homework1;
+
 public class MergeSort {
 
     public static void sort (Entry[] entries) { 

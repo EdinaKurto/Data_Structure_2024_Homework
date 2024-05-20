@@ -1,3 +1,5 @@
+package homework1;
+
 import java.util.Scanner;
 
 public class PhonebookV1 {

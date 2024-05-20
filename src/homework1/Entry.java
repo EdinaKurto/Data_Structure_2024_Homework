@@ -1,3 +1,5 @@
+package homework1;
+
 public class Entry implements Comparable<Entry> {
 
     private String name;
