@@ -7,7 +7,7 @@ public class PhonebookV2 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        RedBlackTree tree = FileUtils.readFile("src/raw_phonebook_data.csv");
+        RedBlackTree tree = FileUtils.readFile("src/homework3/raw_phonebook_data.csv");
 
         int[] edgesCount = tree.countRedAndBlackEdges();
         System.out.println("Total black edges in the tree: " + edgesCount[0] + ", Total red edges in the tree: " + edgesCount[1]);
@@ -23,7 +23,7 @@ public class PhonebookV2 {
             ArrayList<Entry> entries = tree.get(input);
 
             if (entries != null) {
-                System.out.println("\nEntries found: " + entries.size() + "\n");
+                System.out.println("\nEntries found: " + entries.size());
                 for (Entry entry : entries) {
                     System.out.println("Name: " + entry.getName() + " " + entry.getSurname());
                     System.out.println("Street Address: " + entry.getStreetAddress());
